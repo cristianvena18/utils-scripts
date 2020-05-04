@@ -1,7 +1,8 @@
 import speedtest
 
-test = speedtest.SpeedTest()
+test = speedtest.Speedtest()
 download = test.download()
 upload = test.upload()
 
-print(f"Download speed: {download}\n Upload speed: {upload}")
+print("Download speed: ", download)
+print("Upload speed: ", upload)
