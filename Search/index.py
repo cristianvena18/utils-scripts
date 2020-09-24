@@ -4,7 +4,7 @@ from googletrans import Translator
 from googlesearch import search
 import wikipedia
 import requests
-from tkinter import *
+from tkinter import Tk, Label, Button, Entry
 import pyttsx3
 
 class App:
