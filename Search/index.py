@@ -5,7 +5,6 @@ from googlesearch import search
 import wikipedia
 import requests
 from tkinter import Tk, Label, Button, Entry
-import pyttsx3
 
 class App:
     def __init__(self):
