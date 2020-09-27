@@ -11,7 +11,7 @@ class App:
         self.window = Tk()
         self.window.title('Executer')
         self.window.geometry('300x200+10+20')
-        self.btn = Button(self.window, text='Close', fg='blue')
+        self.btn = Button(self.window, text='Search', fg='blue')
         self.btn.place(x=80, y=150)
         self.btn.bind('<Button-1>', self.runCommand)
         self.entry = Entry(self.window, text='Run command...', bd=5)
