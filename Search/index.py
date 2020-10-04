@@ -67,8 +67,14 @@ class App:
         self.label.place(x=10, y=10)
         self.window.geometry('800x200+10+20')
         self.center()
+    def completeName(self, name):
+        switcher = {
+            'google': 'google-chrome-stable',
+        }
+        return switcher.get(name, name)
 
     def open_application(self, name):
+        name = self.completeName(name)
         os.popen(name)
 
     def sendWhatsappMessage(self, phoneNumber, text):
@@ -91,7 +97,7 @@ class App:
 
         #print("Videos found, opening most recent video")
         webbrowser.open("https://www.youtube.com"+lst[count-5])
-        return "https://www.youtube.com"+lst[count-5]
+#        return "https://www.youtube.com"+lst[count-5]
 
     def runCommand(self, event):
         command = self.entry.get()
