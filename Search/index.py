@@ -99,6 +99,9 @@ class App:
         webbrowser.open("https://www.youtube.com"+lst[count-5])
 #        return "https://www.youtube.com"+lst[count-5]
 
+    def initSystem(self):
+        os.popen('bluetoothctl --monitor connect 54:16:A1:E9:1F:31')
+
     def runCommand(self, event):
         command = self.entry.get()
 
@@ -119,6 +122,8 @@ class App:
             self.window.destroy()
         elif 'trans:' in command:
             self.translate(command.split(':')[1])
+        elif 'init' in command:
+            self.initSystem()
         else:
             print('not found command')
 
