@@ -101,7 +101,6 @@ class App:
 #        return "https://www.youtube.com"+lst[count-5]
 
     def initSystem(self):
-        os.popen('bluetoothctl --monitor power off && bluetoothctl --monitor power on')
         os.popen('bluetoothctl --monitor connect 54:16:A1:E9:1F:31')
         self.open_application('slack')
         webbrowser.open('https://music.youtube.com/playlist?list=RDCLAK5uy_mAyu9Ae_cC4uin9kgHk3Eopb7qoLo2AbQ&feature=share&playnext=1')
