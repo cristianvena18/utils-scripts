@@ -71,6 +71,8 @@ class App:
     def completeName(self, name):
         switcher = {
             'google': 'google-chrome-stable',
+	    'wbs': 'webstorm',
+	    'phps': 'phpstorm',
         }
         return switcher.get(name, name)
 
